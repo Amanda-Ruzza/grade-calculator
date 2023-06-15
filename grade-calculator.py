@@ -13,12 +13,10 @@ def calculate_grade():
         print(f"Test score number:  {i+1}\n")
     
         try:
-            test_scores_input = int(input("Please enter the test result score:\n"))   
+            test_scores_input = int(input("Enter the test result score:\n"))   
             if test_scores_input <= 100 or  0:
                 added_scores.append(test_scores_input)
-            
-                
-                        
+                     
             elif test_scores_input > 100:
                 raise ValueError(f"I can only process numbers from '0 - 100'. {test_scores_input} is greater than 100!")
             elif test_scores_input < 0:
