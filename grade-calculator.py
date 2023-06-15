@@ -9,6 +9,7 @@ grade_c = "C"
 grade_b = "B"
 grade_a = "A"
 
+
 def calculator():
     try:
         test_scores_input = int(input("Please enter the test result score:\n"))   
@@ -34,22 +35,12 @@ def calculator():
     else:
         print("I'm ready to acept the next score\n")
 
-calculator()
-calculator()
-added_scores = test_scores_processing.append(test_scores_processing)
-print(f"This is the added scores list: {added_scores}") 
-calculator()
-added_scores = test_scores_processing.append(test_scores_processing)
-print(f"This is the added scores list: {added_scores}") 
-calculator()
-added_scores = test_scores_processing.append(test_scores_processing)
-print(f"This is the added scores list: {added_scores}") 
-calculator()
-added_scores = test_scores_processing.append(test_scores_processing)
-print(f"This is the added scores list: {added_scores}") 
-
-# calculate the sum of added_scores
-# calculate the average of all those scores, compare them to the grades items and print the average grade result
+# iterate calculator function 5 times to get 5 scores
+for i in range(5):
+    calculator()
+    print(f"Testing iteration number:  {i+1}\n")
+    added_scores = test_scores_processing.append(test_scores_processing)  
+    print(f"This is the added scores list: {added_scores}")
 
 print("The average grade of the 5 grades is: \n")
 
